@@ -1,9 +1,9 @@
 # DCGAN
 
+Keras implementation of the following paper on MNIST database.
+
 *Radford, Alec, Luke Metz, and Soumith Chintala. "Unsupervised representation learning with deep convolutional generative adversarial networks." arXiv preprint arXiv:1511.06434 (2015).*  
 [link to paper](https://arxiv.org/pdf/1511.06434v2.pdf)
-
-Keras implementation of the above paper on MNIST database
 
 ### Dependencies
 * Keras
