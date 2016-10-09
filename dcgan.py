@@ -21,35 +21,21 @@ from keras.utils import np_utils
 from keras import initializations
 
 def dataInit():
-	'''
-	Load train and noise data
-	'''
 	print('Loading the data')
-
 	(X_train, Y_train), (X_test, Y_test) = mnist.load_data()
 	X_train = np.concatenate((X_train, X_test), axis=0)
-	
 	X_train = (X_train.astype(np.float32) - 127.5)/127.5
-	
 	print('Training Data: ', X_train.shape)
-	
 	npRandom = np.random.RandomState(18)
-
 	X_noise = []
 	for i in range(X_train.shape[0]):
 		randomNoise = npRandom.uniform(-1,1,100)
 		X_noise.append(randomNoise)
-
 	X_noise = np.array(X_noise)
-
 	print('Random Noise Data: ', X_noise.shape)
-
 	return X_train, X_noise
 
 def saveImage(imageData, imageName, epoch):
-	'''
-	Save Image after every 5 epoch
-	'''
 	f, ax = plt.subplots(16, 8)
 	k = 0
 	for i in range(16):
@@ -64,11 +50,6 @@ def saveImage(imageData, imageName, epoch):
 	return None
 
 def initNormal(shape, name=None):
-	'''
-	Normal distribution initialization centered at 0 and
-	standard deviation 0.02
-
-	'''
 	return initializations.normal(shape, scale=0.02, name=name)
 
 if __name__ == '__main__':
@@ -138,11 +119,9 @@ if __name__ == '__main__':
 	gLoss = []
 
 	for epoch in range(1, nbEpoch + 1):
-
 		print('Epoch: ', epoch)
 
 		for i in range(numBatches):
-
 			noisePredictBatch = X_noise[np.random.randint(numExamples, size = batchSize)]
 			noiseDataBatch = generator.predict(noisePredictBatch)
 			origDataBatch = X_train[np.random.randint(numExamples, size = batchSize)]
@@ -151,7 +130,6 @@ if __name__ == '__main__':
 			trainLabels = np.concatenate((noiseLabelsBatch, origLabelsBatch))
 			trainBatch, trainLabels = shuffle(trainBatch, trainLabels)
 			discriminatorLoss = discriminator.train_on_batch(trainBatch, trainLabels)
-
 			dcganLabels = np.ones(batchSize).astype(int)			
 			discriminator.trainable = False
 			dcganLoss = dcgan.train_on_batch(noisePredictBatch, dcganLabels)
@@ -161,14 +139,12 @@ if __name__ == '__main__':
 		gLoss.append(dcganLoss)
 		
 		if (epoch % 5 == 0) or (epoch == 1):
-
 			saveImage(noiseDataBatch, 'generated', epoch)
 			print('after epoch: ', epoch)
 			print ('dcgan Loss: ', dcganLoss, '\t discriminator loss', discriminatorLoss)
 			generator.save('models/generator_'+str(epoch)+'.h5')
 
 		if epoch > decayIter :
-
 			lrD = discriminator.optimizer.lr.get_value()
 			lrG = generator.optimizer.lr.get_value()
 			discriminator.optimizer.lr.set_value((lrD - lr/decayIter).astype(np.float32))
