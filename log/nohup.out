@@ -1,0 +1,396 @@
+Using Theano backend.
+Using gpu device 0: GeForce GTX TITAN X (CNMeM is disabled, cuDNN 5103)
+/home/rajathk/miniconda2/lib/python2.7/site-packages/theano/sandbox/cuda/__init__.py:600: UserWarning: Your cuDNN version is more recent than the one Theano officially supports. If you see any problems, try updating Theano or downgrading cuDNN to version 5.
+  warnings.warn(warn)
+Loading the data
+('Training Data: ', (70000, 28, 28))
+('Random Noise Data: ', (70000, 100))
+('Number of examples: ', 70000)
+('Number of Batches: ', 546)
+('Number of epochs: ', 200)
+Generator Model
+Discriminator Model
+DCGAN model
+('Epoch: ', 1)
+('after epoch: ', 1)
+('dcgan Loss: ', [array(0.9504697322845459, dtype=float32), array(0.1171875, dtype=float32)], '\t discriminator loss', [array(0.5477794408798218, dtype=float32), array(0.7890625, dtype=float32)])
+('Epoch: ', 2)
+('Epoch: ', 3)
+('Epoch: ', 4)
+('Epoch: ', 5)
+('after epoch: ', 5)
+('dcgan Loss: ', [array(1.1985899209976196, dtype=float32), array(0.0625, dtype=float32)], '\t discriminator loss', [array(0.6180683970451355, dtype=float32), array(0.65234375, dtype=float32)])
+('Epoch: ', 6)
+('Epoch: ', 7)
+('Epoch: ', 8)
+('Epoch: ', 9)
+('Epoch: ', 10)
+('after epoch: ', 10)
+('dcgan Loss: ', [array(0.9308890700340271, dtype=float32), array(0.2109375, dtype=float32)], '\t discriminator loss', [array(0.588592529296875, dtype=float32), array(0.70703125, dtype=float32)])
+('Epoch: ', 11)
+('Epoch: ', 12)
+('Epoch: ', 13)
+('Epoch: ', 14)
+('Epoch: ', 15)
+('after epoch: ', 15)
+('dcgan Loss: ', [array(0.868590772151947, dtype=float32), array(0.3125, dtype=float32)], '\t discriminator loss', [array(0.6113388538360596, dtype=float32), array(0.70703125, dtype=float32)])
+('Epoch: ', 16)
+('Epoch: ', 17)
+('Epoch: ', 18)
+('Epoch: ', 19)
+('Epoch: ', 20)
+('after epoch: ', 20)
+('dcgan Loss: ', [array(1.146142601966858, dtype=float32), array(0.0625, dtype=float32)], '\t discriminator loss', [array(0.6234574913978577, dtype=float32), array(0.60546875, dtype=float32)])
+('Epoch: ', 21)
+('Epoch: ', 22)
+('Epoch: ', 23)
+('Epoch: ', 24)
+('Epoch: ', 25)
+('after epoch: ', 25)
+('dcgan Loss: ', [array(0.8560445308685303, dtype=float32), array(0.3125, dtype=float32)], '\t discriminator loss', [array(0.6090506315231323, dtype=float32), array(0.71875, dtype=float32)])
+('Epoch: ', 26)
+('Epoch: ', 27)
+('Epoch: ', 28)
+('Epoch: ', 29)
+('Epoch: ', 30)
+('after epoch: ', 30)
+('dcgan Loss: ', [array(0.9056345224380493, dtype=float32), array(0.2734375, dtype=float32)], '\t discriminator loss', [array(0.5926458835601807, dtype=float32), array(0.6796875, dtype=float32)])
+('Epoch: ', 31)
+('Epoch: ', 32)
+('Epoch: ', 33)
+('Epoch: ', 34)
+('Epoch: ', 35)
+('after epoch: ', 35)
+('dcgan Loss: ', [array(1.081216812133789, dtype=float32), array(0.125, dtype=float32)], '\t discriminator loss', [array(0.5680599212646484, dtype=float32), array(0.72265625, dtype=float32)])
+('Epoch: ', 36)
+('Epoch: ', 37)
+('Epoch: ', 38)
+('Epoch: ', 39)
+('Epoch: ', 40)
+('after epoch: ', 40)
+('dcgan Loss: ', [array(0.9240602850914001, dtype=float32), array(0.2734375, dtype=float32)], '\t discriminator loss', [array(0.564799964427948, dtype=float32), array(0.72265625, dtype=float32)])
+('Epoch: ', 41)
+('Epoch: ', 42)
+('Epoch: ', 43)
+('Epoch: ', 44)
+('Epoch: ', 45)
+('after epoch: ', 45)
+('dcgan Loss: ', [array(1.343078374862671, dtype=float32), array(0.0234375, dtype=float32)], '\t discriminator loss', [array(0.6111721992492676, dtype=float32), array(0.62890625, dtype=float32)])
+('Epoch: ', 46)
+('Epoch: ', 47)
+('Epoch: ', 48)
+('Epoch: ', 49)
+('Epoch: ', 50)
+('after epoch: ', 50)
+('dcgan Loss: ', [array(0.8546956181526184, dtype=float32), array(0.375, dtype=float32)], '\t discriminator loss', [array(0.582907497882843, dtype=float32), array(0.6875, dtype=float32)])
+('Epoch: ', 51)
+('Epoch: ', 52)
+('Epoch: ', 53)
+('Epoch: ', 54)
+('Epoch: ', 55)
+('after epoch: ', 55)
+('dcgan Loss: ', [array(0.9419560432434082, dtype=float32), array(0.15625, dtype=float32)], '\t discriminator loss', [array(0.5382256507873535, dtype=float32), array(0.765625, dtype=float32)])
+('Epoch: ', 56)
+('Epoch: ', 57)
+('Epoch: ', 58)
+('Epoch: ', 59)
+('Epoch: ', 60)
+('after epoch: ', 60)
+('dcgan Loss: ', [array(0.8794476985931396, dtype=float32), array(0.296875, dtype=float32)], '\t discriminator loss', [array(0.5554195642471313, dtype=float32), array(0.7109375, dtype=float32)])
+('Epoch: ', 61)
+('Epoch: ', 62)
+('Epoch: ', 63)
+('Epoch: ', 64)
+('Epoch: ', 65)
+('after epoch: ', 65)
+('dcgan Loss: ', [array(1.2173619270324707, dtype=float32), array(0.09375, dtype=float32)], '\t discriminator loss', [array(0.5615310668945312, dtype=float32), array(0.7109375, dtype=float32)])
+('Epoch: ', 66)
+('Epoch: ', 67)
+('Epoch: ', 68)
+('Epoch: ', 69)
+('Epoch: ', 70)
+('after epoch: ', 70)
+('dcgan Loss: ', [array(1.2074007987976074, dtype=float32), array(0.1640625, dtype=float32)], '\t discriminator loss', [array(0.5443134307861328, dtype=float32), array(0.7265625, dtype=float32)])
+('Epoch: ', 71)
+('Epoch: ', 72)
+('Epoch: ', 73)
+('Epoch: ', 74)
+('Epoch: ', 75)
+('after epoch: ', 75)
+('dcgan Loss: ', [array(1.0900205373764038, dtype=float32), array(0.171875, dtype=float32)], '\t discriminator loss', [array(0.5529391169548035, dtype=float32), array(0.7265625, dtype=float32)])
+('Epoch: ', 76)
+('Epoch: ', 77)
+('Epoch: ', 78)
+('Epoch: ', 79)
+('Epoch: ', 80)
+('after epoch: ', 80)
+('dcgan Loss: ', [array(1.4223361015319824, dtype=float32), array(0.0390625, dtype=float32)], '\t discriminator loss', [array(0.5843757390975952, dtype=float32), array(0.69140625, dtype=float32)])
+('Epoch: ', 81)
+('Epoch: ', 82)
+('Epoch: ', 83)
+('Epoch: ', 84)
+('Epoch: ', 85)
+('after epoch: ', 85)
+('dcgan Loss: ', [array(0.6423767805099487, dtype=float32), array(0.6171875, dtype=float32)], '\t discriminator loss', [array(0.6283116936683655, dtype=float32), array(0.65625, dtype=float32)])
+('Epoch: ', 86)
+('Epoch: ', 87)
+('Epoch: ', 88)
+('Epoch: ', 89)
+('Epoch: ', 90)
+('after epoch: ', 90)
+('dcgan Loss: ', [array(0.9442645311355591, dtype=float32), array(0.2421875, dtype=float32)], '\t discriminator loss', [array(0.539228081703186, dtype=float32), array(0.75390625, dtype=float32)])
+('Epoch: ', 91)
+('Epoch: ', 92)
+('Epoch: ', 93)
+('Epoch: ', 94)
+('Epoch: ', 95)
+('after epoch: ', 95)
+('dcgan Loss: ', [array(0.6640064120292664, dtype=float32), array(0.6015625, dtype=float32)], '\t discriminator loss', [array(0.6116699576377869, dtype=float32), array(0.65625, dtype=float32)])
+('Epoch: ', 96)
+('Epoch: ', 97)
+('Epoch: ', 98)
+('Epoch: ', 99)
+('Epoch: ', 100)
+('after epoch: ', 100)
+('dcgan Loss: ', [array(0.8752728700637817, dtype=float32), array(0.375, dtype=float32)], '\t discriminator loss', [array(0.5609186887741089, dtype=float32), array(0.69140625, dtype=float32)])
+('Epoch: ', 101)
+learning rate linearly decayed
+('Epoch: ', 102)
+learning rate linearly decayed
+('Epoch: ', 103)
+learning rate linearly decayed
+('Epoch: ', 104)
+learning rate linearly decayed
+('Epoch: ', 105)
+('after epoch: ', 105)
+('dcgan Loss: ', [array(1.3489923477172852, dtype=float32), array(0.1171875, dtype=float32)], '\t discriminator loss', [array(0.5094372034072876, dtype=float32), array(0.75390625, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 106)
+learning rate linearly decayed
+('Epoch: ', 107)
+learning rate linearly decayed
+('Epoch: ', 108)
+learning rate linearly decayed
+('Epoch: ', 109)
+learning rate linearly decayed
+('Epoch: ', 110)
+('after epoch: ', 110)
+('dcgan Loss: ', [array(1.3936151266098022, dtype=float32), array(0.0390625, dtype=float32)], '\t discriminator loss', [array(0.5446978807449341, dtype=float32), array(0.69140625, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 111)
+learning rate linearly decayed
+('Epoch: ', 112)
+learning rate linearly decayed
+('Epoch: ', 113)
+learning rate linearly decayed
+('Epoch: ', 114)
+learning rate linearly decayed
+('Epoch: ', 115)
+('after epoch: ', 115)
+('dcgan Loss: ', [array(0.786262035369873, dtype=float32), array(0.4375, dtype=float32)], '\t discriminator loss', [array(0.5438185930252075, dtype=float32), array(0.734375, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 116)
+learning rate linearly decayed
+('Epoch: ', 117)
+learning rate linearly decayed
+('Epoch: ', 118)
+learning rate linearly decayed
+('Epoch: ', 119)
+learning rate linearly decayed
+('Epoch: ', 120)
+('after epoch: ', 120)
+('dcgan Loss: ', [array(0.993099570274353, dtype=float32), array(0.2890625, dtype=float32)], '\t discriminator loss', [array(0.5340455770492554, dtype=float32), array(0.734375, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 121)
+learning rate linearly decayed
+('Epoch: ', 122)
+learning rate linearly decayed
+('Epoch: ', 123)
+learning rate linearly decayed
+('Epoch: ', 124)
+learning rate linearly decayed
+('Epoch: ', 125)
+('after epoch: ', 125)
+('dcgan Loss: ', [array(0.8619939088821411, dtype=float32), array(0.4765625, dtype=float32)], '\t discriminator loss', [array(0.5797799229621887, dtype=float32), array(0.7109375, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 126)
+learning rate linearly decayed
+('Epoch: ', 127)
+learning rate linearly decayed
+('Epoch: ', 128)
+learning rate linearly decayed
+('Epoch: ', 129)
+learning rate linearly decayed
+('Epoch: ', 130)
+('after epoch: ', 130)
+('dcgan Loss: ', [array(1.534175157546997, dtype=float32), array(0.0234375, dtype=float32)], '\t discriminator loss', [array(0.5561566352844238, dtype=float32), array(0.69921875, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 131)
+learning rate linearly decayed
+('Epoch: ', 132)
+learning rate linearly decayed
+('Epoch: ', 133)
+learning rate linearly decayed
+('Epoch: ', 134)
+learning rate linearly decayed
+('Epoch: ', 135)
+('after epoch: ', 135)
+('dcgan Loss: ', [array(1.2180060148239136, dtype=float32), array(0.125, dtype=float32)], '\t discriminator loss', [array(0.5682432651519775, dtype=float32), array(0.69921875, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 136)
+learning rate linearly decayed
+('Epoch: ', 137)
+learning rate linearly decayed
+('Epoch: ', 138)
+learning rate linearly decayed
+('Epoch: ', 139)
+learning rate linearly decayed
+('Epoch: ', 140)
+('after epoch: ', 140)
+('dcgan Loss: ', [array(1.2344753742218018, dtype=float32), array(0.0859375, dtype=float32)], '\t discriminator loss', [array(0.539419412612915, dtype=float32), array(0.703125, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 141)
+learning rate linearly decayed
+('Epoch: ', 142)
+learning rate linearly decayed
+('Epoch: ', 143)
+learning rate linearly decayed
+('Epoch: ', 144)
+learning rate linearly decayed
+('Epoch: ', 145)
+('after epoch: ', 145)
+('dcgan Loss: ', [array(1.507685661315918, dtype=float32), array(0.0390625, dtype=float32)], '\t discriminator loss', [array(0.5740077495574951, dtype=float32), array(0.64453125, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 146)
+learning rate linearly decayed
+('Epoch: ', 147)
+learning rate linearly decayed
+('Epoch: ', 148)
+learning rate linearly decayed
+('Epoch: ', 149)
+learning rate linearly decayed
+('Epoch: ', 150)
+('after epoch: ', 150)
+('dcgan Loss: ', [array(1.3681519031524658, dtype=float32), array(0.0390625, dtype=float32)], '\t discriminator loss', [array(0.5674535036087036, dtype=float32), array(0.671875, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 151)
+learning rate linearly decayed
+('Epoch: ', 152)
+learning rate linearly decayed
+('Epoch: ', 153)
+learning rate linearly decayed
+('Epoch: ', 154)
+learning rate linearly decayed
+('Epoch: ', 155)
+('after epoch: ', 155)
+('dcgan Loss: ', [array(1.0795294046401978, dtype=float32), array(0.1796875, dtype=float32)], '\t discriminator loss', [array(0.5366656184196472, dtype=float32), array(0.75, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 156)
+learning rate linearly decayed
+('Epoch: ', 157)
+learning rate linearly decayed
+('Epoch: ', 158)
+learning rate linearly decayed
+('Epoch: ', 159)
+learning rate linearly decayed
+('Epoch: ', 160)
+('after epoch: ', 160)
+('dcgan Loss: ', [array(1.2202011346817017, dtype=float32), array(0.0859375, dtype=float32)], '\t discriminator loss', [array(0.4938984513282776, dtype=float32), array(0.78515625, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 161)
+learning rate linearly decayed
+('Epoch: ', 162)
+learning rate linearly decayed
+('Epoch: ', 163)
+learning rate linearly decayed
+('Epoch: ', 164)
+learning rate linearly decayed
+('Epoch: ', 165)
+('after epoch: ', 165)
+('dcgan Loss: ', [array(1.0404618978500366, dtype=float32), array(0.21875, dtype=float32)], '\t discriminator loss', [array(0.5059303045272827, dtype=float32), array(0.796875, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 166)
+learning rate linearly decayed
+('Epoch: ', 167)
+learning rate linearly decayed
+('Epoch: ', 168)
+learning rate linearly decayed
+('Epoch: ', 169)
+learning rate linearly decayed
+('Epoch: ', 170)
+('after epoch: ', 170)
+('dcgan Loss: ', [array(1.0918890237808228, dtype=float32), array(0.1796875, dtype=float32)], '\t discriminator loss', [array(0.5530608892440796, dtype=float32), array(0.7265625, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 171)
+learning rate linearly decayed
+('Epoch: ', 172)
+learning rate linearly decayed
+('Epoch: ', 173)
+learning rate linearly decayed
+('Epoch: ', 174)
+learning rate linearly decayed
+('Epoch: ', 175)
+('after epoch: ', 175)
+('dcgan Loss: ', [array(1.0505272150039673, dtype=float32), array(0.2734375, dtype=float32)], '\t discriminator loss', [array(0.5585768222808838, dtype=float32), array(0.70703125, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 176)
+learning rate linearly decayed
+('Epoch: ', 177)
+learning rate linearly decayed
+('Epoch: ', 178)
+learning rate linearly decayed
+('Epoch: ', 179)
+learning rate linearly decayed
+('Epoch: ', 180)
+('after epoch: ', 180)
+('dcgan Loss: ', [array(0.9705250263214111, dtype=float32), array(0.2890625, dtype=float32)], '\t discriminator loss', [array(0.5693365335464478, dtype=float32), array(0.72265625, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 181)
+learning rate linearly decayed
+('Epoch: ', 182)
+learning rate linearly decayed
+('Epoch: ', 183)
+learning rate linearly decayed
+('Epoch: ', 184)
+learning rate linearly decayed
+('Epoch: ', 185)
+('after epoch: ', 185)
+('dcgan Loss: ', [array(1.0506209135055542, dtype=float32), array(0.1796875, dtype=float32)], '\t discriminator loss', [array(0.5449971556663513, dtype=float32), array(0.734375, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 186)
+learning rate linearly decayed
+('Epoch: ', 187)
+learning rate linearly decayed
+('Epoch: ', 188)
+learning rate linearly decayed
+('Epoch: ', 189)
+learning rate linearly decayed
+('Epoch: ', 190)
+('after epoch: ', 190)
+('dcgan Loss: ', [array(1.061189889907837, dtype=float32), array(0.1953125, dtype=float32)], '\t discriminator loss', [array(0.533349335193634, dtype=float32), array(0.7578125, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 191)
+learning rate linearly decayed
+('Epoch: ', 192)
+learning rate linearly decayed
+('Epoch: ', 193)
+learning rate linearly decayed
+('Epoch: ', 194)
+learning rate linearly decayed
+('Epoch: ', 195)
+('after epoch: ', 195)
+('dcgan Loss: ', [array(1.0313642024993896, dtype=float32), array(0.2265625, dtype=float32)], '\t discriminator loss', [array(0.5205106735229492, dtype=float32), array(0.7734375, dtype=float32)])
+learning rate linearly decayed
+('Epoch: ', 196)
+learning rate linearly decayed
+('Epoch: ', 197)
+learning rate linearly decayed
+('Epoch: ', 198)
+learning rate linearly decayed
+('Epoch: ', 199)
+learning rate linearly decayed
+('Epoch: ', 200)
+('after epoch: ', 200)
+('dcgan Loss: ', [array(1.0324616432189941, dtype=float32), array(0.2265625, dtype=float32)], '\t discriminator loss', [array(0.5497022867202759, dtype=float32), array(0.7265625, dtype=float32)])
+learning rate linearly decayed
+Peace
